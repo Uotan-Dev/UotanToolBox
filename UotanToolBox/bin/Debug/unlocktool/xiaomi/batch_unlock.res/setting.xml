@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="640, 400" mininfo="640, 500" maxinfo="640, 500"  caption="0,0,0,42" showdirty="false">
+  <Include source="style.xml" />
+  <VerticalLayout childalign="center" childvalign="vcenter" bkimage="file='imgs/setting_bg.png' source='8,6,870,588' corner='158,42,1,50'">
+    <HorizontalLayout height="42" inset="10,0,10,0">
+      <Label name="title_label" text="设置" font="14" textcolor="#606060" align="left,venter" padding="0, 0, 0, 0" />
+      <HorizontalLayout width="11">
+        <Button name="window_close_btn" float="true" pos="0,11,11,22" width="11" height="11"
+      normalimage="file='btns/close.png' source='0,0,11,11'" hotimage="file='btns/close.png' source='11,0,22,11'" pushedimage="file='btns/close.png' source='22,0,33,11'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout>
+      <!--content-->
+      <VerticalLayout width="158" childpadding="4" inset="2,2,2,2" childalign="center">
+        <Option name="general_setting_opt" height="30" selected="true" group="setting_options" text="常规设置" bordersize="0" align="center,venter" selectedtextcolor="#e24f1b"/>
+        <Option name="about_opt" height="30" group="setting_options"  text="关于" bordersize="0" align="center,venter" selectedtextcolor="#e24f1b"/>
+      </VerticalLayout>
+      <TabLayout selectedid="0" name="setting_tabs">
+        <VerticalLayout name="general_setting_layout" padding="15,15,15,15" childalign="left" >
+          <Label textcolor="#848484" height="30" font="16" text="常规设置"  align="left,venter"/>
+          <Control height="2" padding="0,10,0,0"  bkimage="file='imgs/seperate_line.png'"/>
+          <HorizontalLayout height="30" padding="0,10,0,0">
+            <Label text="网络代理:" width="80" height="18" align="right,venter"/>
+            <Button name="netproxy_btn" text="配置" width="100" height="30" padding="10,0,5,0"/>
+          </HorizontalLayout>
+
+          <HorizontalLayout height="30"  padding="0,10,0,0">
+            <Label text="日志:" width="80" height="18" align="right,venter"/>
+            <Button name="explore_logdir_btn" text="打开..." width="100" height="30" padding="10,0,5,0"/>
+            <Button name="clear_log_btn" text="清除" width="100" height="30" padding="10,0,5,0"/>
+            <Label name="log_size_label" align="left,venter"/>
+          </HorizontalLayout>
+		  
+		  <HorizontalLayout height="30"  padding="0,10,0,0">
+            <Label text="自动登录:" width="145" height="18" align="right,venter"/>
+            <CheckBox name="auto_checkbtn" width="14" height="14" padding="10,8,0,8"/>
+          </HorizontalLayout>
+		  
+		  <HorizontalLayout height="30"  padding="0,10,0,0">
+            <Label text="EDL:" width="80" height="18"/>
+            <CheckBox name="edl_checkbtn" width="14" height="14" padding="10,8,0,8"/>
+          </HorizontalLayout>
+		  
+		  <Label text="Region:" align="right" width="60" padding="0,10,0,0" visible="false"/>
+		  <Combo name="region_url" padding="5,0,18,0" textpadding="10,0,0,0" width="350" align="left" height="30" font="14" childalign="center" visible="false">
+		  	<ListLabelElement text="China" 		userdata="CN" height="28" font="14" selected="true" />
+			<ListLabelElement text="Other" 		userdata="Other" height="28" font="14"/>
+
+		  </Combo>
+        </VerticalLayout>
+
+        <VerticalLayout name="about_setting_layout" padding="15,15,15,15" childalign="left" >
+          <Label textcolor="#848484" height="30" font="16" text="关于" align="left,venter"/>
+          <Control height="2" padding="0,10,0,0"  bkimage="file='imgs/seperate_line.png'"/>
+          <HorizontalLayout height="30" padding="0,10,0,0">
+            <Label text="PC-ID:" width="80" align="right,venter"/>
+            <Edit name="pcid_text" text="" readonly="true" padding="10,0,5,0"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="30"  padding="0,10,0,0">
+            <Label text="版本:" width="500" align="right,venter"/>
+            <Edit name="app_version_text" text="" readonly="true" padding="10,0,5,0"/>
+            <Button name="check_new_version_btn" text="" width="1" height="1" padding="10,0,5,0"/>
+          </HorizontalLayout>
+          <HorizontalLayout name="new_version_layout" visible="false" height="30"  padding="0,10,0,0">
+            <Label text="本版本由柚坛刷机助手团队魔改，版权仍归小米官方所有" width="500" />
+         <Label text="如果本版本侵犯到了您的利益，请联系我们删除" width="500" />
+
+            <Edit name="new_app_version_text" text="" width="1" readonly="true" padding="10,0,5,0" textcolor="0xe24f1b"/>
+            <Button name="download_new_version_btn" text="" width="1" height="1" padding="10,0,5,0"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+
+      </TabLayout>
+    </HorizontalLayout>
+    <Button name="hide_window_btn" text="关闭" height="40" width="120" padding="0,5,0,5"/>
+  </VerticalLayout>
+</Window>

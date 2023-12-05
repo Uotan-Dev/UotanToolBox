@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <ListHBoxElement height="30" childalign="center" childvalign="vcenter">
+    <Label name="no" align="center" valign="center"/>
+    <Label name="serial" align="center" valign="center"/>
+    <Label name="product" align="center" valign="center"/>
+    <Label name="unlock_status" align="center" valign="center"/>
+    <HorizontalLayout childalign="left" childvalign="vcenter" inset="2,0,2,0">
+      <Control name="status_idle" width="18" height="18" visible="false"/>
+      <GifAnim name="status_wait" width="18" height="18" visible="false" bkimage="imgs/color_dot_waiting.gif"/>
+      <Control name="status_ok" width="18" height="18" visible="false" bkimage="file='imgs/ok.png'"/>
+      <Control name="status_err" width="18" height="18" visible="false" bkimage="file='imgs/error.png'"/>
+      <Control name="status_warn" width="18" height="18" visible="false" bkimage="file='imgs/warning.png'"/>
+      <Label name="message" align="left" valign="center" padding="2,0,0,0"/>
+    </HorizontalLayout>
+
+  </ListHBoxElement>
+</Window>

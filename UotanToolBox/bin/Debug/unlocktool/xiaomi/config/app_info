@@ -1,0 +1,10 @@
+{
+	"language": "zh-CN",
+	"channel" : "1002",
+	"color.usb.in":"0x0000ff",
+	"color.usb.out":"0xff0000",
+	"color.usb.idle":"0x000000",
+    "account_login_url": "https://account.xiaomi.com/pass/serviceLogin?sid=unlockApi&json=false&passive=true&hidden=false&_snsDefault=facebook&_locale=en&checkSafePhone=true",
+    "account_reg_url": "https://account.xiaomi.com/pass/register?&_snsDefault=facebook",
+    "account_pwd_url": "https://account.xiaomi.com/pass/forgetPassword?&_snsDefault=facebook"
+}

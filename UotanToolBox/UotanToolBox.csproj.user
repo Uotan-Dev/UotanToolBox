@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>publish\|C:\Users\lrh15\Desktop\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <_LastSelectedProfileId>C:\Users\lrh15\source\repos\UotanToolBox\UotanToolBox\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ChoiceISO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DeviceWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DownloadWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MindowsInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MindowsTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SetWinPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

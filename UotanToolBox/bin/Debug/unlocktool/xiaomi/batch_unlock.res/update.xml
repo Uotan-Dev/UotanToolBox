@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window type="window" size="400,190" mininfo="400,250" maxinfo="400,250"  caption="0,0,0,34">
+  <Include source="style.xml" />
+  <VerticalLayout childalign="center" childvalign="vcenter" bkimage="file='imgs/dialog_bg.png' corner='1,34,1,1'">
+
+    <HorizontalLayout height="33" padding="10,0,10,0">
+      <Label name="title_label" text="本应用为免费应用" font="14" textcolor="#606060" align="left,venter" padding="0, 0, 0, 0" />
+      <HorizontalLayout width="11">
+        <Button name="window_close_btn" float="true" pos="0,11,11,22" width="11" height="11"
+      normalimage="file='btns/close.png' source='0,0,11,11'" hotimage="file='btns/close.png' source='11,0,22,11'" pushedimage="file='btns/close.png' source='22,0,33,11'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+
+    <VerticalLayout padding="15,15,15,15" childalign="center">
+      <Label height="30" font="16" text="欢迎使用本解锁工具" align="center,venter"/>
+      <HorizontalLayout height="30"  padding="0,10,0,0" width="300">
+        <Label text="本应用永久免费，请勿用于商业用途" width="300" />
+
+        
+        <Label name="app_version_text" text="2.2.0.0" width="1" padding="10,0,5,0" align="left,venter"/>
+      </HorizontalLayout>
+
+      <HorizontalLayout height="30"  padding="0,10,0,0" width="250">
+        <Label text="欢迎访问柚坛社区 uotan.cn" width="250" />
+        <Label name="new_app_version_text" text="2.2.5.2" width="1" padding="10,0,5,0" align="left,venter"/>
+      </HorizontalLayout>
+      <Button name="download_new_version_btn" text="Download" width="1" height="1" padding="0,30,0,30"/>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>
