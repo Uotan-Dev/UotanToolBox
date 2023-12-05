@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="660,170" mininfo="400,170" caption="0,0,0,33" >
+  <Include source="style.xml" />
+  <VerticalLayout name="bg" bkimage="file='imgs/dialog_bg.png' corner='0,33,0,0'" hole="true" childalign="center" align="center">
+    <HorizontalLayout name="title_bar" height="33">
+      <HorizontalLayout>
+    <Label  text=" 柚坛社区小米/红米解锁工具" font="bold_24" padding="10,0,0,0" align="left"/>
+        <Label name="app_title_lbl" text=" " font="bold_24" width="1" align="left"/>
+      </HorizontalLayout>
+      <VerticalLayout width="98">
+        <Button name="settingbtn" float="true" pos="0,9,31,33" width="24" height="14" maxheight="14" maxwidth="24"
+           normalimage="file='btns/setting.png' source='0,0,24,14'" hotimage="file='btns/setting.png' source='24,0,48,14'" pushedimage="file='btns/setting.png' source='48,0,72,14'" />
+
+        <Button name="minbtn" float="true" pos="32,2,63,31" width="31" height="29" maxheight="29" maxwidth="31"
+                normalimage="file='btns/light_min.png' source='0,0,31,29'" hotimage="file='btns/light_min.png' source='31,0,62,29'" pushedimage="file='btns/light_min.png' source='62,0,93,29'" />
+        <Button name="closebtn" float="true" pos="64,2,95,31" width="31" height="29" maxheight="29" maxwidth="31"
+        normalimage="file='btns/light_close.png' source='0,0,31,29'" hotimage="file='btns/light_close.png' source='31,0,62,29'" pushedimage="file='btns/light_close.png' source='62,0,93,29'" />
+      </VerticalLayout>
+    </HorizontalLayout>
+
+    <VerticalLayout padding="1,0,1,0" height="100">
+        <Include source="device_list.xml" />
+    </VerticalLayout>
+
+    <HorizontalLayout name="status_bar" height="35" padding="30,0,0,2" >
+      <HorizontalLayout>
+        <HorizontalLayout name="account_info_layout" childalign="left" childvalign="vcenter">
+          <HorizontalLayout name="user_icon" height="33" width="33" childalign="center" bkimage="file='imgs/default_user_icon.png'">
+            <Control bkimage="file='imgs/user_icon_frame.png'" height="33" width="33"/>
+          </HorizontalLayout>
+          <Text name="logout_wizard" textcolor="#999999" text="{u}{a}退出登录{/a}{/u}" showhtml="true" align="left" valign="vcenter"/>
+        </HorizontalLayout>
+        <HorizontalLayout name="account_help_layout" visible="true">
+          <HorizontalLayout height="33" width="33" childalign="center" bkimage="file='imgs/default_user_icon.png'">
+            <Control bkimage="file='imgs/user_icon_frame.png'" height="33" width="33"/>
+          </HorizontalLayout>
+          <Text name="login_wizard" textcolor="#999999" text="{u}{a}请先登录小米账户{/a}{/u}" showhtml="true" align="left" valign="vcenter"/>
+        </HorizontalLayout>
+      </HorizontalLayout>
+	  
+	  <HorizontalLayout width="100" >
+        <!--Label text="Region:"  textcolor="#656565"  width="60" align="left" textpadding="0,0,0,6"/-->
+        <Label name="app_region" text="Other" width="40" textcolor="#656565"  align="left" textpadding="0,0,0,6"/>
+      </HorizontalLayout>
+	  
+      <VerticalLayout width="130">
+       <Label text="柚坛社区 uotan.cn"  textcolor="#656565"  align="right"/>
+
+        <Label name="app_version_label" text="v2.0.1123.1"  textcolor="#656565"  align="right"/>
+       
+      </VerticalLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

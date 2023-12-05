@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <VerticalLayout name="web_login" float="true" pos="2,35,808,528">
+    <GifAnim name="waiting_anti" visible="false" float="true" bkimage="drawable\wait.gif" pos="348,96,462,210"/>
+    <HorizontalLayout name="net_error_layout" visible="true" padding="10,0,10,0">
+      <VerticalLayout>
+        <Label text="您似乎没有联网" textcolor="#505050" font="48" height="60" padding="0,100,0,0"/>
+        <Label text="请连接网络后刷新试试" textcolor="#a6a6a6" font="14" height="60"  />
+        <Button name="refresh_web" left="100" top="296" height="42" width="180" text="刷新" textcolor="#666666" normalimage="file='drawable\common_btn.png' source='0,0,142,42'" hotimage="file='drawable\common_btn.png' source='142,0,284,42'" pushedimage="file='drawable\common_btn.png' source='284,0,426,42'" />
+      </VerticalLayout>
+      <Control width="390" height="410" bkimage="file='drawable\net_err.png' source='110,110,500, 520'" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

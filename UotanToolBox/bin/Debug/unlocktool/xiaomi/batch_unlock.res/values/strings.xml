@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">柚坛解锁工具</string>
+  <!-- Account Login -->
+  <string name="login_title">登录您的小米帐户以解锁设备</string>
+  <string name="login_user_tips">邮箱/手机号/小米ID</string>
+  <string name="login_pwd_tips">密码</string>
+  <string name="login_secure_token_tips">输入6位小米设备验证码</string>
+  <string name="login_input_verify_code_tips">输入验证码</string>
+  <string name="login">登录</string>
+  <string name="logout_html">{u}{a}退出登录{/a}{/u}</string>
+  <string name="account_register">登录</string>
+  <string name="account_forget">忘记密码</string>
+  <string name="err_user_empty">输入用户名</string>
+  <string name="err_pwd_empty">输入密码</string>
+  <string name="tip_enter_verify_code">输入验证码</string>
+  <string name="tip_enter_dynamic_token">输入Mi验证器生成的6位代码</string>
+  <string name="err_verify_code_invalid">验证码不正确</string>
+  <string name="err_pwd_invalid">密码不正确</string>
+  <string name="err_user_not_exist">帐户不存在</string>
+  <string name="err_login_too_fast">尝试太多了。等待15分钟，然后再试一次。</string>
+  <string name="err_login_plus_sms_code">在登录密码末尾添加一个六位数的动态代码</string>
+  <string name="err_network_exception">网络异常</string>
+  <string name="err_login_other">无法登录</string>
+  <string name="login_processing">登录&#8230;</string>
+  <string name="logout">退出登录</string>
+  <!-- net error code-->
+  <string name="reading_phone_info">正在读取设备信息。。。</string>
+  <string name="read_phone_info_fail">读取失败，请刷新或重新启动设备</string>
+  <string name="unlocked">已解锁</string>
+  <string name="locked">未解锁</string>
+  <string name="unlock_fail">不能解锁</string>
+  <string name="net_error">网络异常</string>
+  <string name="reunlock">再次解锁</string>
+  <string name="unlock_success">解锁成功</string>
+  <string name="verifing_device">验证设备&#8230;</string>
+  <string name="unlocking">解锁中&#8230;</string>
+  <string name="unlock_finished">完成</string>
+  <string name="verified_fail">不能验证你的设备</string>
+  <string name="missing_phone">没有连接小米手机</string>
+  <string name="cannot_read_phone_info">不能获取信息，请重试</string>
+  <string name="account_not_bind">Current account is different from the account info on the device</string>
+  <string name="already_unlocked">No need to unlock this device</string>
+  <string name="unkown_error">Unknown error</string>
+  <!-- edl -->
+  <string name="edl_readed">Connected</string>
+  <string name="edling">edl...</string>
+  <string name="edl_success">edl success</string>
+  <string name="edl_err">edl failed</string>
+  <!-- unlock error code-->
+  <string name="code_xxxxx">%d:Unknown error</string>
+  <string name="code_10000">10000:Request parameter error</string>
+  <string name="code_10001">10001:Signature verification failed</string>
+  <string name="code_10002">10002:The same IP request too often</string>
+  <string name="code_10003">10003:Internal server error</string>
+  
+  <string name="code_10004">10004:Request has expired</string>
+
+  
+  <string name="code_20030">You have to wait at least 30 days before unlocking a different device.</string>
+  <string name="code_20031">Account isn't associated with the device.</string>
+  <string name="code_20032">Couldn't generate the required signature.</string>
+  <string name="code_20033">Profile photo resolution is too low or the photo is blocked.</string>
+  <string name="code_20034">Can't unlock this device using current account.</string>
+  <string name="code_20035">Download the latest version of Mi Unlock.</string>
+  <string name="code_20036">The accoint has just been associated with the device. Wait %dh and try again.</string>
+  <string name="code_20037">You reached the limit for the number of unlocked devices.</string>
+  <string name="code_50001">The device does not support unlock for the time being</string>
+
+  <!-- setting-->
+  <string name="log_file_sz">(Cache size:%dM）</string>
+  <string name="busy_checking_verison">Checking...</string>
+  <string name="already_latest_version">(Already latest）</string>
+    <!-- main frame-->
+  <string name="unlock_title">Unlock Tool</string>
+  <string name="edl_title">Fastboot to EDL Tool</string>
+  <string name="unlock_text">解锁BL</string>
+  <string name="edl_text">EDL(F6)</string>
+</resources>

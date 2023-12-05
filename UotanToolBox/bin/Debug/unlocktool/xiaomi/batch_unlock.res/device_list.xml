@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <VerticalLayout name="dev_list_window">
+    <List name="dev_list" itemhlinesize="1" itemvlinesize="1" itemhlinecolor="#dfe9f5" itemvlinecolor="#dfe9f5"
+          itemalign="center" bottombordersize="2">
+      <ListHeader height="24">
+        <ListHeaderItem text="No." width="40" sepwidth="1"/>
+        <ListHeaderItem text="序列号" width="160" sepwidth="1"/>
+        <ListHeaderItem text="产品" width="160" sepwidth="1"/>
+        <ListHeaderItem text="状态" width="100" sepwidth="1"/>
+        <ListHeaderItem text="消息"  sepwidth="1"/>
+      </ListHeader>
+    </List>
+    <HorizontalLayout height="36" width="400" padding="0,15,0,0">
+      <Button name="scan_device_btn" text="刷新列表" width="115" font="14" padding="65,0,10,0"/>
+      <Button name="unlock_device_btn" text="解锁BL" width="115" font="14" padding="5,0,0,0"/>
+      <Button name="violence_test_btn" visible="false" text="TEST" font="14" padding="10,0,0,0"/>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
