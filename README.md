@@ -1,3 +1,7 @@
+# 全新版本[UotanToolboxNT](https://github.com/Uotan-Dev/UotanToolboxNT)开发中，欢迎玩机爱好者们踊跃贡献
+
+---
+
 # UotanToolBox-柚坛搞机工具箱
 
 ## 前言
