@@ -733,7 +733,7 @@ namespace UotanToolBox
                 for (int i = 0; i < line.Length; i++)
                 {
                     need = line[i];
-                    int find = need.IndexOf("location:");
+                    int find = need.IndexOf("Location:");
                     if (find != -1)
                         break;
                 }

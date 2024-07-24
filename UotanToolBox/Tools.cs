@@ -25,7 +25,7 @@ namespace UotanToolBox
         }
 
         //储存版本信息
-        string version = "2.9.0";
+        string version = "2.9.2";
         string webversion = "";
 
         //检查网络链接相关
@@ -228,7 +228,7 @@ namespace UotanToolBox
             {
                 conninfo.Text = "901D";
             }
-            int check900e = Mindows.Devcon("find usb*").IndexOf("900E");
+            int check900e = Mindows.Devcon("find usb*").IndexOf("900E (");
             if (check900e != -1)
             {
                 conninfo.Text = "900E";

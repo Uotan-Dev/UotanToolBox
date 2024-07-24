@@ -3641,7 +3641,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(71, 17);
             this.label22.TabIndex = 1;
-            this.label22.Text = "版本：2.9.0";
+            this.label22.Text = "版本：2.9.2";
             // 
             // pictureBox3
             // 
